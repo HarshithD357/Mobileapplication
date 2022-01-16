@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".image_details">
+
+    <!-- Back navigation -->
+    <LinearLayout
+        android:id="@+id/layout_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="18dp"
+        android:layout_alignParentTop="true">
+
+
+        <ImageButton
+            android:id="@+id/back_btn_d"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:scaleType="fitStart"
+            android:src="@drawable/back"
+            android:layout_weight="0"
+            android:layout_marginRight="50dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/black"
+            android:layout_weight="0"
+            android:text="details"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_navigation"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@id/img_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:text="sdfgdsjf"
+            android:textSize="28dp"
+            />
+
+        <TextView
+            android:id="@id/img_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_name"
+            android:layout_marginBottom="14dp"
+            android:text="sdfgdsjf"
+            android:textSize="28dp"
+            />
+
+        <TextView
+            android:id="@id/img_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_size"
+            android:layout_marginBottom="14dp"
+            android:text="sdfgdsjf"
+            android:textSize="28dp"
+            />
+        <TextView
+            android:id="@+id/img_path"
+            android:layout_below="@+id/img_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:text="sdfgdsjf"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp">
+
+    <!-- Name-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="14dp"
+        android:layout_below="@+id/layout_navigation"
+        android:id="@+id/name"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="24dp"
+            android:layout_weight="0"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/img_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+    <!-- size -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="14dp"
+        android:layout_below="@+id/name"
+        android:id="@+id/size"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size: "
+            android:textSize="24dp"
+            android:layout_weight="0"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/img_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+
+        <!-- date modified-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="14dp"
+            android:layout_below="@+id/size"
+            android:id="@+id/date_modified"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                android:textSize="24dp"
+                android:layout_weight="0"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/img_modified_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
+
+        <!-- path -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="14dp"
+        android:layout_below="@+id/date_modified"
+        android:id="@+id/path"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Path: "
+            android:textSize="24dp"
+            android:layout_weight="0"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/img_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:textSize="22dp"
+            android:textColor="#03A9F4"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

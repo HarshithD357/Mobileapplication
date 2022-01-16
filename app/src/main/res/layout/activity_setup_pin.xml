@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="62dp"
+    android:layout_marginBottom="32dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <!-- PIN -->
+    <EditText
+        android:id="@+id/pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp"
+        android:hint="Enter 4-digit PIN"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:padding="12dp"
+        android:textColor="@color/black" />
+
+
+    <!-- Confirm PIN -->
+    <EditText
+        android:id="@+id/cpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/pin"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp"
+        android:padding="12dp"
+        android:hint="Confirm 4-digit PIN"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:textColor="@color/black" />
+
+    <!-- Email ID
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_below="@id/cpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="20dp"
+        android:padding="12dp"
+        android:hint="Enter email ID"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        /> -->
+
+    <!-- Security question  -->
+
+    <EditText
+        android:id="@+id/sq1"
+        android:layout_below="@id/cpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/security"
+        android:drawablePadding="20dp"
+        android:padding="12dp"
+        android:hint="Who is your first teacher?"
+        android:inputType="text"
+        android:textColor="@color/black"
+        />
+
+
+    <!-- Ok button -->
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sq1"
+        android:layout_centerInParent="true"
+        android:layout_margin="34dp"
+        android:background="@drawable/button_bg"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="36dp"
+        android:layout_marginTop="36dp"
+        android:text="Confirm"
+        />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_below="@+id/confirm_btn"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>
